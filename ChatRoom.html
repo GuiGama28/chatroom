@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="icon" href="chatroom-removebg-preview.png">
+        <title>ChatRoom</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <button id="logout" onclick="sair();" class="gliphicon glyphicon-log-out btn btn-danger">Logout</button>
+
+            <center>
+                <h1 class="header">
+                    ChatRoom
+                    <sup>
+                        <img src="chatroom-removebg-preview.png">
+                    </sup>
+                    </h1>
+                    <h3 id="user_name" class="color_white"></h3>
+
+                    <div class="form-group input_div-room_page">
+                        <input type="text" id="room_name" class="form-control" placeholder="Nome da sua sala aqui!">
+                        </div>
+
+                        <button onclick="addRoom();" class="btn bt">Adicione sua sala</button>
+
+                        <h3 class="color_white">Encontre uma sala</h3>
+
+                        <div id="output"></div>
+            </center>
+        </div>
+        <script src="ChatRoom.js"></script>
+    </body>
+</html>
